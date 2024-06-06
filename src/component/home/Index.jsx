@@ -1,16 +1,18 @@
 // import React from 'react'
 import Skills from "../skills/Skills";
 import Contact from "../contact/Contact";
-import Navbar from "../navbar/Navbar";
 import About from "../about/About";
+import Porfolio from "../portfolio/Porfolio";
+import Desktop from "../header/Desktop";
 
 const Index = () => {
   return (
     <>
-      <div className="flex  flex-col h-screen">
-        <Navbar />
+      <div>
+        <Desktop />
         <About />
         <Skills />
+        <Porfolio />
         <Contact />
       </div>
     </>

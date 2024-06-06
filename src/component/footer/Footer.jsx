@@ -5,13 +5,16 @@ import facebook from "/assets/icons/footer-icons/facebook.svg";
 import instagram from "/assets/icons/footer-icons/instagram.svg";
 import linkedin from "/assets/icons/footer-icons/linkedin.svg";
 import Container from "../container/Container";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
     <footer className="bg-black  py-10">
       <Container>
         <div className="flex flex-col justify-center items-center text-white  border-red-500">
-          <img src={footerArrow} alt="Double arrow icon" />
+          <Link to="/">
+            <img src={footerArrow} alt="Double arrow icon" />
+          </Link>
           <p className="pt-3 font-semibold">BACK TO TOP</p>
           <div className="flex gap-5 py-8">
             <img src={facebook} alt="facebook icon" />

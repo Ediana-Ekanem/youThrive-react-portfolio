@@ -11,7 +11,7 @@ import Container from "../container/Container";
 
 const About = () => {
   return (
-    <div className="bg-[#d6d6d6] py-10">
+    <div className="bg-[#d6d6d6] py-10 relative z-20">
       <Container>
         <div className="">
           <Title text="About me" />
@@ -20,7 +20,7 @@ const About = () => {
           <Divider />
 
           <div>
-            <div className=" lg:flex justify-between ">
+            <div className=" lg:flex justify-between  ">
               <div className="box-1 relative">
                 <img src={design} alt="services-logo" className="w-10 h-10  " />
                 <h3 className="font-bold uppercase text-lg absolute top-1 left-7 ">

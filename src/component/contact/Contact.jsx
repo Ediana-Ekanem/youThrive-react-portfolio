@@ -8,13 +8,15 @@ import Title from "../tittle/Title";
 
 const Contact = () => {
   return (
-    <div className="bg-[#e4e4e4] py-10">
-      <Container>
-        <Title text="Contact" />
-        <Heading />
-        <Divider />
-        <Form />
-      </Container>
+    <div>
+      <div className="bg-[#e4e4e4] pt-10">
+        <Container>
+          <Title text="Contact" />
+          <Heading />
+          <Divider />
+          <Form />
+        </Container>
+      </div>
       <Footer />
     </div>
   );

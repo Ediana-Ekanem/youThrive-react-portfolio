@@ -59,9 +59,8 @@ const Form = () => {
           />
         </fieldset>
         <fieldset className="mb-10">
-          <input
-            className=" border-black border-l-4 border-b-4 p-20 md:w-[500px] uppercase text-sm font-semibold custom-placeholder  outline-none bg-[#e4e4e4]"
-            type="text"
+          <textarea
+            className="border-black border-l-4 border-b-4 p-20 md:w-[500px] uppercase text-sm font-semibold custom-placeholder outline-none bg-[#e4e4e4]"
             name="message"
             id="message"
             placeholder="Your Message*"
