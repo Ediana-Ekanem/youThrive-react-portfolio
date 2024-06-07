@@ -2,12 +2,16 @@ import React from "react";
 import SubTitle from "../sub-title/SubTitle";
 import Container from "../container/Container";
 import imgIT from "/assets/img/Logo ITB.svg";
+import imgitMobile from "/assets/icons/ITB-mobile.svg";
 
 const SubHeader = () => {
   return (
     <div className="relative bg-[#1d1d1d] text-white py-5">
-      <div className="absolute top-0 right-10 w-[400px] ">
+      <div className=" hidden md:block absolute top-0 right-10  w-[400px] ">
         <img src={imgIT} alt="IT Logo" className="w-full h-full" />
+      </div>
+      <div className="md:hidden absolute left-20  w-[220px] ">
+        <img src={imgitMobile} alt="IT Logo" className="w-full h-full" />
       </div>
       <Container>
         <div className="relative z-10 ">
