@@ -7,18 +7,28 @@ import imgitMobile from "/assets/icons/ITB-mobile.svg";
 const SubHeader = () => {
   return (
     <div className="relative bg-[#1d1d1d] text-white py-5">
-      <div className=" hidden md:block absolute top-0 right-10  w-[400px] ">
-        <img src={imgIT} alt="IT Logo" className="w-full h-full" />
+      <div className="hidden md:block absolute top-0 right-10 w-[400px]">
+        <img
+          src={imgIT}
+          alt="IT Logo"
+          className="w-full h-full"
+          loading="lazy"
+        />
       </div>
-      <div className="md:hidden absolute left-20  w-[220px] ">
-        <img src={imgitMobile} alt="IT Logo" className="w-full h-full" />
+      <div className="md:hidden absolute left-20 w-[220px]">
+        <img
+          src={imgitMobile}
+          alt="IT Logo"
+          className="w-full h-full"
+          loading="lazy"
+        />
       </div>
       <Container>
-        <div className="relative z-10 ">
+        <div className="relative z-10">
           <h3 className="tracking-widest font-semibold text-center md:text-start text-lg">
             IT BERRIES
           </h3>
-          <p className="w-full  text-[15px] max-w-[900px] my-5 px-5 md:px-0">
+          <p className="w-full text-[15px] max-w-[900px] my-5 px-5 md:px-0">
             Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
             varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
             quis libero viverra facilisis ut ac est. Morbi commodo, eros in

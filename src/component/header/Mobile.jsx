@@ -21,7 +21,12 @@ const Mobile = () => {
     <div className="relative w-full bg-black">
       <nav className="flex justify-between items-center p-4 bg-black z-30">
         <div className="w-10 h-10">
-          <img src={logo} alt="logo" className="w-full h-full object-cover" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
         </div>
         <div onClick={toggleMenu} className="cursor-pointer">
           {isOpen ? (
@@ -37,6 +42,7 @@ const Mobile = () => {
           src={isOpen ? secondBgImage : firstBgImage}
           alt="background-image"
           className="w-full h-full"
+          loading="lazy"
         />
       </div>
 
@@ -56,17 +62,32 @@ const Mobile = () => {
             </div>
 
             <div className="flex flex-col space-y-3 items-center">
-              <img src={email} alt="email-logo" className="w-7 h-7" />
-              <img src={git} alt="git-logo" className="w-7 h-7" />
-              <img src={linkedIn} alt="linkedIn-logo" className="w-7 h-7" />
+              <img
+                src={email}
+                alt="email-logo"
+                className="w-7 h-7"
+                loading="lazy"
+              />
+              <img
+                src={git}
+                alt="git-logo"
+                className="w-7 h-7"
+                loading="lazy"
+              />
+              <img
+                src={linkedIn}
+                alt="linkedIn-logo"
+                className="w-7 h-7"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       ) : (
-        <div className=" absolute top-20 left-0 w-full">
-          <div className="  h-[250px]  bg-black bg-opacity-75 flex flex-col items-center justify-center text-white z-50 ">
-            <ul className="space-y-5 text-xl font-bold w-full text-center ">
-              <li className="hover:bg-white hover:text-black py-3 ">
+        <div className="absolute top-20 left-0 w-full">
+          <div className="h-[250px] bg-black bg-opacity-75 flex flex-col items-center justify-center text-white z-50">
+            <ul className="space-y-5 text-xl font-bold w-full text-center">
+              <li className="hover:bg-white hover:text-black py-3">
                 <Link to="/">About Me</Link>
               </li>
               <li className="hover:bg-white hover:text-black py-3">
@@ -86,13 +107,28 @@ const Mobile = () => {
               <p className="text-xl font-advent-pro">my name is Ediana</p>
               <h3 className="text-3xl uppercase mt-1">I'm a developer</h3>
               <div className="my-3">
-                <img src={seperator} alt="seperator icon" />
+                <img src={seperator} alt="seperator icon" loading="lazy" />
               </div>
 
               <div className="flex justify-center space-x-5 items-center mt-10">
-                <img src={email} alt="email-logo" className="w-8 h-8" />
-                <img src={git} alt="git-logo" className="w-8 h-8" />
-                <img src={linkedIn} alt="linkedIn-logo" className="w-8 h-8" />
+                <img
+                  src={email}
+                  alt="email-logo"
+                  className="w-8 h-8"
+                  loading="lazy"
+                />
+                <img
+                  src={git}
+                  alt="git-logo"
+                  className="w-8 h-8"
+                  loading="lazy"
+                />
+                <img
+                  src={linkedIn}
+                  alt="linkedIn-logo"
+                  className="w-8 h-8"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

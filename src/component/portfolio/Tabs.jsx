@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import All from "../portfolio/All";
-import Coded from "../portfolio/Coded";
-import Designed from "../portfolio/Designed";
+import React, { useState, Suspense } from "react";
+
+const All = React.lazy(() => import("../portfolio/All"));
+const Coded = React.lazy(() => import("../portfolio/Coded"));
+const Designed = React.lazy(() => import("../portfolio/Designed"));
 
 const Tabs = () => {
   const [currentTab, setCurrentTab] = useState("1");
@@ -33,7 +34,7 @@ const Tabs = () => {
         {tabs.map((tab, i) => (
           <button
             key={i}
-            className=" hover:text-white w-[132px] mb-3 pb-2 border-white disabled:border-b-2 font-[500] text-[15px] disabled:text-white py-5"
+            className="hover:text-white w-[132px] mb-3 pb-2 border-white disabled:border-b-2 font-[500] text-[15px] disabled:text-white py-5"
             id={tab.id}
             disabled={currentTab === String(tab.id)}
             onClick={handleTabClick}
@@ -45,7 +46,11 @@ const Tabs = () => {
       <div className="content">
         {tabs.map((tab, i) => (
           <div key={i}>
-            {currentTab === String(tab.id) && <div>{tab.content}</div>}
+            {currentTab === String(tab.id) && (
+              <Suspense fallback={<div>Loading...</div>}>
+                <div>{tab.content}</div>
+              </Suspense>
+            )}
           </div>
         ))}
       </div>

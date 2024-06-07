@@ -1,9 +1,12 @@
-import React from "react";
-import bgImg from "/assets/img/profile.png";
+import React, { Suspense } from "react";
+import LazyLoad from "react-lazyload";
 import Navbar from "../navbar/Navbar";
-import email from "/assets/icons/@.svg";
-import git from "/assets/icons/git-black.svg";
-import linkedin from "/assets/icons/linkn.svg";
+
+const email = "/assets/icons/@.svg";
+const git = "/assets/icons/git-black.svg";
+const linkedin = "/assets/icons/linkn.svg";
+
+const bgImg = "/assets/img/profile.png"; // Ensure the path is correct
 
 const Desktop = () => {
   return (
@@ -24,26 +27,29 @@ const Desktop = () => {
                   Front-end Developer / UI Designer
                 </p>
 
-                <div className="flex  justify-start space-x-5 mt-20">
-                  <div className="shadow-lg rounded bg-[#c4c4c4] w-10 h-10  p-2">
+                <div className="flex justify-start space-x-5 mt-20">
+                  <div className="shadow-lg rounded bg-[#c4c4c4] w-10 h-10 p-2">
                     <img
                       src={email}
                       alt="email"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
-                  <div className="shadow-lg rounded bg-[#c4c4c4] w-10 h-10  p-2">
+                  <div className="shadow-lg rounded bg-[#c4c4c4] w-10 h-10 p-2">
                     <img
                       src={git}
                       alt="git"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
-                  <div className="shadow-lg rounded bg-[#c4c4c4] w-10 h-10  p-2">
+                  <div className="shadow-lg rounded bg-[#c4c4c4] w-10 h-10 p-2">
                     <img
                       src={linkedin}
                       alt="linkedin"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -51,13 +57,14 @@ const Desktop = () => {
             </div>
           </div>
           <div className="flex-1 relative pt-20">
-            <div className="bg-black  slanted-background"></div>
-            <div
-              className="absolute top-30 left-36 w-[300px] h-full bg-cover bg-center bg-no-repeat z-10"
-              style={{ backgroundImage: `url(${bgImg})` }}
-            ></div>
-
-            <div className="bg-transparent w-32 text-[12px] z-50 absolute left-[210px] bottom-1  text-center">
+            <div className="bg-black slanted-background"></div>
+            <LazyLoad height={410} offset={100} once>
+              <div
+                className="absolute top-30 left-36 w-[300px] h-full bg-cover bg-center bg-no-repeat z-10"
+                style={{ backgroundImage: `url(${bgImg})` }}
+              ></div>
+            </LazyLoad>
+            <div className="bg-transparent w-32 text-[12px] z-50 absolute left-[210px] bottom-1 text-center">
               <p>
                 this is not my photo, but I dearly hope to get one just like
                 this

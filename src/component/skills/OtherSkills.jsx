@@ -16,6 +16,7 @@ const OtherSkills = () => {
                 className="w-18 h-24 mb-2"
                 src={learn.img}
                 alt="learning-icon"
+                loading="lazy"
               />
               <p className="uppercase text-sm">{learn.title}</p>
               <p className="text-xs">{learn.subTitle}</p>

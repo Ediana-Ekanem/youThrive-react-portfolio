@@ -9,32 +9,41 @@ import pic6 from "/assets/img/port6.png";
 const Coded = () => {
   return (
     <div className="md:grid grid-cols-3 gap-0">
-      <img src={pic2} alt="grid-image" className="w-full h-full object-cover" />
-
-      <img src={pic4} alt="grid-image" className="w-full h-full object-cover" />
-
+      <img
+        src={pic2}
+        alt="grid-image"
+        className="w-full h-full object-cover"
+        loading="lazy"
+      />
+      <img
+        src={pic4}
+        alt="grid-image"
+        className="w-full h-full object-cover"
+        loading="lazy"
+      />
       <img
         src={pic5}
         alt="grid-image"
-        className="hidden md:block  w-full h-full object-cover"
+        className="hidden md:block w-full h-full object-cover"
+        loading="lazy"
       />
-
       <img
         src={pic1}
         alt="grid-image"
         className="hidden md:block w-full h-full object-cover"
+        loading="lazy"
       />
-
       <img
         src={pic3}
         alt="grid-image"
-        className=" w-full h-full object-cover"
+        className="w-full h-full object-cover"
+        loading="lazy"
       />
-
       <img
         src={pic6}
         alt="grid-image"
         className="hidden md:block w-full h-full object-cover"
+        loading="lazy"
       />
     </div>
   );

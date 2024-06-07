@@ -21,6 +21,7 @@ const UsingNow = () => {
                 className="w-18 h-24 mb-2 flex justify-start"
                 src={learn.img}
                 alt="learning-icon"
+                loading="lazy"
               />
               <p className="uppercase text-sm  mb-20 md:mb-0">{learn.title}</p>
             </div>

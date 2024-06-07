@@ -1,27 +1,32 @@
-// import React from 'react'
-import Container from "../container/Container";
-import Divider from "../divider/Divider";
-import Footer from "../footer/Footer";
-import Form from "../form/Form";
-import Heading from "../heading/Heading";
-import Title from "../tittle/Title";
+import React, { Suspense } from "react";
+
+const Container = React.lazy(() => import("../container/Container"));
+const Divider = React.lazy(() => import("../divider/Divider"));
+const Footer = React.lazy(() => import("../footer/Footer"));
+const Form = React.lazy(() => import("../form/Form"));
+const Heading = React.lazy(() => import("../heading/Heading"));
+const Title = React.lazy(() => import("../tittle/Title"));
 
 const Contact = () => {
   return (
     <div>
       <div className="bg-[#e4e4e4] pt-10">
-        <Container>
-          <Title text="Contact" />
-          <Heading
-            text="Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
-        finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero
-        viverra facilisis ut ac est."
-          />
-          <Divider />
-          <Form />
-        </Container>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Container>
+            <Title text="Contact" />
+            <Heading
+              text="Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
+              finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero
+              viverra facilisis ut ac est."
+            />
+            <Divider />
+            <Form />
+          </Container>
+        </Suspense>
       </div>
-      <Footer />
+      <Suspense fallback={<div>Loading footer...</div>}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };

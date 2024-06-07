@@ -12,27 +12,38 @@ const Designed = () => {
       <img
         src={pic3}
         alt="grid-image"
-        className=" w-full h-full object-cover"
+        className="w-full h-full object-cover"
+        loading="lazy"
       />
-      <img src={pic2} alt="grid-image" className="w-full h-full object-cover" />
-
-      <img src={pic4} alt="grid-image" className="w-full h-full object-cover" />
-
+      <img
+        src={pic2}
+        alt="grid-image"
+        className="w-full h-full object-cover"
+        loading="lazy"
+      />
+      <img
+        src={pic4}
+        alt="grid-image"
+        className="w-full h-full object-cover"
+        loading="lazy"
+      />
       <img
         src={pic6}
         alt="grid-image"
         className="hidden md:block w-full h-full object-cover"
+        loading="lazy"
       />
       <img
         src={pic5}
         alt="grid-image"
-        className="hidden md:block  w-full h-full object-cover"
+        className="hidden md:block w-full h-full object-cover"
+        loading="lazy"
       />
-
       <img
         src={pic1}
         alt="grid-image"
         className="hidden md:block w-full h-full object-cover"
+        loading="lazy"
       />
     </div>
   );

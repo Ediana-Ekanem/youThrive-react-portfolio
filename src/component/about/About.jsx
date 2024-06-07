@@ -49,7 +49,12 @@ const About = () => {
           <div className="px-5 md:px-0">
             <div className=" lg:flex justify-between  ">
               <div className="box-1 relative">
-                <img src={design} alt="services-logo" className="w-10 h-10  " />
+                <img
+                  src={design}
+                  alt="services-logo"
+                  className="w-10 h-10"
+                  loading="lazy"
+                />
                 <h3 className="font-bold uppercase text-lg absolute top-1 left-7 ">
                   Design
                 </h3>
@@ -63,7 +68,8 @@ const About = () => {
                 <img
                   src={development}
                   alt="services-logo"
-                  className="w-10 h-10  "
+                  className="w-10 h-10"
+                  loading="lazy"
                 />
                 <h3 className="font-bold uppercase text-lg absolute top-1 left-7 ">
                   Development
@@ -80,7 +86,8 @@ const About = () => {
                 <img
                   src={maintenance}
                   alt="services-logo"
-                  className="w-10 h-10  "
+                  className="w-10 h-10"
+                  loading="lazy"
                 />
                 <h3 className="font-bold uppercase text-lg absolute top-1 left-7 ">
                   maintenance
