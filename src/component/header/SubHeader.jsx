@@ -11,8 +11,10 @@ const SubHeader = () => {
       </div>
       <Container>
         <div className="relative z-10 ">
-          <h3 className="tracking-widest font-semibold text-lg">IT BERRIES</h3>
-          <p className="w-full  text-[15px] max-w-[900px] my-5">
+          <h3 className="tracking-widest font-semibold text-center md:text-start text-lg">
+            IT BERRIES
+          </h3>
+          <p className="w-full  text-[15px] max-w-[900px] my-5 px-5 md:px-0">
             Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
             varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
             quis libero viverra facilisis ut ac est. Morbi commodo, eros in
@@ -23,10 +25,10 @@ const SubHeader = () => {
             tempor, accumsan nec eros.
           </p>
 
-          <div className="flex justify-start">
+          <div className="flex justify-center md:justify-start">
             <SubTitle
               text="Read More"
-              className="text-white border-white px-[10px] text-[1rem] my-2 h-5 flex items-center"
+              className="text-white border-white px-[10px] text-[0.8rem] my-2 h-5 flex items-center"
             />
           </div>
         </div>

@@ -3,13 +3,13 @@ import Skills from "../skills/Skills";
 import Contact from "../contact/Contact";
 import About from "../about/About";
 import Porfolio from "../portfolio/Porfolio";
-import Desktop from "../header/Desktop";
+import Header from "../header/Header";
 
 const Index = () => {
   return (
     <>
       <div>
-        <Desktop />
+        <Header />
         <About />
         <Skills />
         <Porfolio />

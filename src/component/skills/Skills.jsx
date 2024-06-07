@@ -8,7 +8,7 @@ import UsingNow from "./UsingNow.jsx";
 
 const Skills = () => {
   return (
-    <div className=" bg-[#e8e7e7] pt-10 pb-20">
+    <div className=" bg-[#e8e7e7] pt-10 pb-5 md:pb-20">
       <Container>
         <Divider />
         <Title text="skills" />

@@ -12,7 +12,11 @@ const Contact = () => {
       <div className="bg-[#e4e4e4] pt-10">
         <Container>
           <Title text="Contact" />
-          <Heading />
+          <Heading
+            text="Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
+        finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero
+        viverra facilisis ut ac est."
+          />
           <Divider />
           <Form />
         </Container>

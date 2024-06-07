@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { usingNowData } from "./data/UsingNowData";
 
 const UsingNow = () => {
