@@ -5,7 +5,7 @@ import SubHeader from "./SubHeader";
 
 const Header = () => {
   return (
-    <div>
+    <>
       <div className="hidden md:block">
         <Desktop />
       </div>
@@ -14,7 +14,7 @@ const Header = () => {
         <Mobile />
       </div>
       <SubHeader />
-    </div>
+    </>
   );
 };
 

@@ -8,13 +8,17 @@ import Header from "../header/Header";
 const Index = () => {
   return (
     <>
-      <div>
+      <header>
         <Header />
+      </header>
+      <main>
         <About />
         <Skills />
         <Porfolio />
+      </main>
+      <footer>
         <Contact />
-      </div>
+      </footer>
     </>
   );
 };
